@@ -1,0 +1,7 @@
+services:
+  vcmi:
+    build: .
+    volumes:
+      - ./game_data:/root/.local/share/vcmi
+    tty: true
+    stdin_open: true
