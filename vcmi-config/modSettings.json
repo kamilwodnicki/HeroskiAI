@@ -1,0 +1,14 @@
+{
+	"activePreset" : "default",
+	"core" : {
+		"active" : true,
+		"checksum" : "bbe70a7e",
+		"name" : "Original game files",
+		"validated" : false
+	},
+	"presets" : {
+		"default" : {
+			"mods" : [ "vcmi", "vcmi-extras", "core", "ml", "mmai" ]
+		}
+	}
+}

@@ -2,6 +2,9 @@ services:
   vcmi:
     build: .
     volumes:
-      - ./game_data:/root/.local/share/vcmi
+      - ./game_data:/vcmi/build/bin/data
+      - ./game_data:/vcmi-gym/vcmi/rel/bin/data
+      - ./vcmi-config/modSettings.json:/vcmi/build/bin/data/config/modSettings.json
+      - ./vcmi-config/modSettings.json:/vcmi-gym/vcmi/rel/bin/data/config/modSettings.json
     tty: true
     stdin_open: true
