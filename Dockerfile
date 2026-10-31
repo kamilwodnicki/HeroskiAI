@@ -75,6 +75,7 @@ RUN apt-get update && apt-get install -y software-properties-common && \
 RUN cd /vcmi-gym && \
     python3.12 -m venv .venv && \
     .venv/bin/pip install --upgrade pip && \
+    .venv/bin/pip install torch==2.12.1 --index-url https://download.pytorch.org/whl/cpu && \
     .venv/bin/pip install -r requirements/requirements-torch-2.12.1+cpu.txt
 
 # Upstream bug: BattleHexArray's iterator (boost::container::vec_iterator) isn't

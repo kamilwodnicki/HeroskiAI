@@ -6,5 +6,7 @@ services:
       - ./game_data:/vcmi-gym/vcmi/rel/bin/data
       - ./vcmi-config/modSettings.json:/vcmi/build/bin/data/config/modSettings.json
       - ./vcmi-config/modSettings.json:/vcmi-gym/vcmi/rel/bin/data/config/modSettings.json
+      - ./training:/vcmi-gym/training
+      - ./checkpoints:/vcmi-gym/checkpoints
     tty: true
     stdin_open: true
